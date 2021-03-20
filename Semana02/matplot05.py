@@ -2,18 +2,16 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-bins = [40,50,60,70,80,90,100]
+left = fifa.loc[fifa['Preferred Foot'] == 'Left'].count()[0]
+right = fifa.loc[fifa['Preferred Foot'] == 'Right'].count()[0]
 
 plt.figure(figsize=(8,5))
 
-plt.hist(fifa.Overall, bins=bins, color='#abcdef')
+labels = ['Left', 'Right']
+colors = ['#abcdef', '#aabbcc']
 
-plt.xticks(bins)
+plt.pie([left, right], labels = labels, colors=colors, autopct='%.2f %%')
 
-plt.ylabel('Number of Players')
-plt.xlabel('Skill Level')
-plt.title('Distribution of Player Skills in FIFA 2018')
-
-plt.savefig('histogram.png', dpi=300)
+plt.title('Foot Preference of FIFA Players')
 
 plt.show()
