@@ -1,14 +1,14 @@
 import PyQt5.QWidgets as qtw
 
-class MainWindow(qtw.QWidget)
-    def_init_(self):
+class MainWindow(qtw.QWidget):
+    def _init_(self):
         super()._init()
         self.setWindowTitle('Calculadora')
         self.setLayout(qtw.QVBoxLayout())
         self.keypad()
 
         self.show()
-    def keypad(self)
+    def keypad(self):
         container = qtw.QWidget()
         container = setLayout(qtw.QGridLayout())
 
@@ -51,7 +51,7 @@ class MainWindow(qtw.QWidget)
         container.layout().addWidget(btn_divid,5,3)
         self.layout().addWidget(container)
 
-    def num_press(self,key_number)
+    def num_press(self,key_number):
         self.temp_nums.append(key_number)
         temp_string = ''.join(self.temp_nums)
         if self.fin_nums:
