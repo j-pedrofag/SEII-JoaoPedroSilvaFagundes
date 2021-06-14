@@ -19,7 +19,7 @@ Criptografia de chave simétrica é caracterizada pelo uso de uma função que e
 c)	Diferença entre um sistema de criptografia e um hash de validação.
 O hash converte os dados em resumo ou hash da mensagem, que é um número gerado a partir de uma sequência de texto, enquanto a criptografia usa algoritmos de criptografia e uma chave para converter a mensagem em um formato irreconhecível. 
 
-2.	A partir dos vídeos disponíveis no link abaixo, explique: 
+3.	A partir dos vídeos disponíveis no link abaixo, explique: 
 https://www.youtube.com/watch?v=_qypi2NKCcg
 https://www.youtube.com/watch?v=HCHqtpipwu4
 
